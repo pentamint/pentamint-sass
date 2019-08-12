@@ -1,0 +1,120 @@
+/*!
+Theme Name: Paris Baguette Biz
+Theme URI: http://underscores.me/
+Author: Paris Croissant Co., Ltd.
+Author URI: https://www.pariscroissant.co.kr
+Description: Theme developed by Paris Croissant Co., Ltd. for Paris Baguette
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: biz.paris.co.kr
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+PBBiz is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import "pbbiz/variables-site/variables-site";
+@import "pbbiz/mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Initialize Bootstrap
+--------------------------------------------------------------*/
+@import "../bootstrap/scss/bootstrap"; // if dedicated theme exist, comment out
+
+/*--------------------------------------------------------------
+# Initialize Theme Defaults
+--------------------------------------------------------------*/
+@import "pbbiz/base";
+@import "pbbiz/modules/core-cross-browser";
+@import "pbbiz/modules/core-gutenberg"; // if dedicated page builder exist, comment out
+@import "pbbiz/modules/core-bootstrap"; // if dedicated theme exist, comment out
+@import "pbbiz/modules/core-utilities";
+
+/*--------------------------------------------------------------
+# Initialize Woocommerce
+--------------------------------------------------------------*/
+@import "pbbiz/modules/plugin-woocommerce";
+
+/*--------------------------------------------------------------
+# Initialize Theme Customizations
+--------------------------------------------------------------*/
+@import "pbbiz/theme/colors";
+@import "pbbiz/theme/transitions";
+@import "pbbiz/theme/typography";
+@import "pbbiz/theme/navigation";
+@import "pbbiz/theme/header";
+@import "pbbiz/theme/content";
+@import "pbbiz/theme/footer";
+
+/*--------------------------------------------------------------
+# Custom UI Components
+--------------------------------------------------------------*/
+
+@import "pbbiz/modules/ui-searchform";
+@import "pbbiz/modules/ui-social-widget";
+@import "pbbiz/modules/ui-page-header-banner";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "pbbiz/elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Applications
+--------------------------------------------------------------*/
+@import "pbbiz/variables-site/hamburgers-settings";
+@import "pbbiz/applications/hamburgers/hamburgers";
+
+/*--------------------------------------------------------------
+# Theme Plugins & Modules
+--------------------------------------------------------------*/
+@import "pbbiz/modules/plugin-custom-content-shortcode";
+@import "pbbiz/modules/plugin-tablepress";
+@import "pbbiz/modules/plugin-kboard";

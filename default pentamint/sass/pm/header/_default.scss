@@ -11,13 +11,13 @@
       @include align-items(center); // vertical middle elements
       @include justify-content(center); // mobile center logo
       .site-branding {
+        // expand logo size
+        width: 100%;
         // logo position above header row
         z-index: 1;
         >a { // .custom-logo-link
           // logo default
           width: 100%;
-          // mobile header logo size
-          max-width: $size__logo-mobile-x;
           >img { // .custom-logo
             max-width: $size__logo-mobile-x;
             max-height: $size__logo-mobile-y;

@@ -23,11 +23,6 @@
 @import "top-header";
 
 // ----- Mobile ----- //
-// Logo design
-.site-branding {
-  padding: 5px;
-  border-radius: 100px;
-}
 
 @include media-breakpoint-up($breakpoint__mobile-nav) {
   .site-header { // #masthead
@@ -35,7 +30,7 @@
       .container {
         .site-branding {
           // Logo PC positioning
-          margin-top: -35px;
+          // margin-top: -35px;
         }
       }
     }
@@ -45,7 +40,7 @@
         .container {
           .site-branding {
             // PC fixed header logo repositioning
-            margin-top: 20px;
+            // margin-top: 20px;
           }
         }
       }

@@ -1,8 +1,8 @@
 /*!
-Theme Name: Paris Baguette Biz
+Theme Name: Pentamint WP Theme
 Theme URI: http://underscores.me/
-Author: Paris Croissant Co., Ltd.
-Author URI: https://www.pariscroissant.co.kr
+Author: Pentamint Co., Ltd.
+Author URI: https://www.pentamint.com
 Description: Theme developed by Paris Croissant Co., Ltd. for Paris Baguette
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -13,15 +13,15 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-PBBiz is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Pentamint WP Theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import "pbbiz/variables-site/variables-site";
-@import "pbbiz/mixins/mixins-master";
+@import "pm/variables-site/variables-site";
+@import "pm/mixins/mixins-master";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -36,40 +36,40 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Initialize Theme Defaults
 --------------------------------------------------------------*/
-@import "pbbiz/base";
-@import "pbbiz/modules/core-cross-browser";
-@import "pbbiz/modules/core-gutenberg"; // if dedicated page builder exist, comment out
-@import "pbbiz/modules/core-bootstrap"; // if dedicated theme exist, comment out
-@import "pbbiz/modules/core-utilities";
+@import "pm/base";
+@import "pm/modules/core-cross-browser";
+@import "pm/modules/core-gutenberg"; // if dedicated page builder exist, comment out
+@import "pm/modules/core-bootstrap"; // if dedicated theme exist, comment out
+@import "pm/modules/core-utilities";
 
 /*--------------------------------------------------------------
 # Initialize Woocommerce
 --------------------------------------------------------------*/
-@import "pbbiz/modules/plugin-woocommerce";
+@import "pm/modules/plugin-woocommerce";
 
 /*--------------------------------------------------------------
 # Initialize Theme Customizations
 --------------------------------------------------------------*/
-@import "pbbiz/theme/colors";
-@import "pbbiz/theme/transitions";
-@import "pbbiz/theme/typography";
-@import "pbbiz/theme/navigation";
-@import "pbbiz/theme/header";
-@import "pbbiz/theme/content";
-@import "pbbiz/theme/footer";
+@import "pm/theme/colors";
+@import "pm/theme/transitions";
+@import "pm/theme/typography";
+@import "pm/theme/navigation";
+@import "pm/theme/header";
+@import "pm/theme/content";
+@import "pm/theme/footer";
 
 /*--------------------------------------------------------------
 # Custom UI Components
 --------------------------------------------------------------*/
 
-@import "pbbiz/modules/ui-searchform";
-@import "pbbiz/modules/ui-social-widget";
-@import "pbbiz/modules/ui-page-header-banner";
+@import "pm/modules/ui-searchform";
+@import "pm/modules/ui-social-widget";
+@import "pm/modules/ui-page-header-banner";
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-@import "pbbiz/elements/elements";
+@import "pm/elements/elements";
 
 /*--------------------------------------------------------------
 # Forms
@@ -109,12 +109,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Applications
 --------------------------------------------------------------*/
-@import "pbbiz/variables-site/hamburgers-settings";
-@import "pbbiz/applications/hamburgers/hamburgers";
+@import "pm/variables-site/hamburgers-settings";
+@import "pm/applications/hamburgers/hamburgers";
 
 /*--------------------------------------------------------------
 # Theme Plugins & Modules
 --------------------------------------------------------------*/
-@import "pbbiz/modules/plugin-custom-content-shortcode";
-@import "pbbiz/modules/plugin-tablepress";
-@import "pbbiz/modules/plugin-kboard";
+@import "pm/modules/plugin-custom-content-shortcode";
+@import "pm/modules/plugin-tablepress";
+@import "pm/modules/plugin-kboard";

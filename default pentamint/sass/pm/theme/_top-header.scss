@@ -1,20 +1,4 @@
-// --- Responsive fullwidth border-top bar design --- //
-#top-header {
-    border-top: none;
-}
-#main-header {
-    border-top: 5px solid;
-}
-@include media-breakpoint-up($breakpoint__mobile-nav) {
-    #top-header {
-        border-top: 5px solid;
-    }
-    #main-header {
-        border-top: none;
-    }
-}
-
-// ----- Top Header Design ----- //
+/* ----- Top Header Design ----- */
 // --- Hide on mobile --- //
 #top-header {
     display: none;
@@ -60,23 +44,47 @@
                     }
                 }
             }
-            // right widget secondary nav
-            nav { // .navbar, .navbar-secondary
+            // top header left widget
+            nav.navbar-top-header-left {
+                width: 100%;
+                // top header nav align left
+                @include justify-content(flex-start);
+                .nav-wrapper {
+                    .navbar-collapse {
+                        @include flexbox;
+                        >ul { // #top-header-left-menu .navbar-nav
+                            >li { // .nav-item
+                                // menu item divider
+                                &:not(:first-child):before  {
+                                    display: block;
+                                    position: absolute;
+                                    top: 14px;
+                                    right: 58px;
+                                    width: 1px;
+                                    height: .5rem;
+                                    content: '';
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // top header right widget
+            nav.navbar-top-header-right {
                 width: 100%;
                 // top header nav align right
                 @include justify-content(flex-end);
                 .nav-wrapper {
-                    .navbar-collapse { //  .menu-secondary
-                        // display none reset
+                    .navbar-collapse {
                         @include flexbox;
-                        >ul { // #menu-secondary-menu .navbar-nav
+                        >ul { // #top-header-right-menu .navbar-nav
                             >li { // .nav-item
-                                // secondary nav divider
+                                // menu item divider
                                 &:not(:first-child):before  {
                                     display: block;
                                     position: absolute;
-                                    top: 13px;
-                                    right: 69px;
+                                    top: 14px;
+                                    right: 58px;
                                     width: 1px;
                                     height: .5rem;
                                     content: '';
@@ -89,8 +97,8 @@
         }
     }
     // secondary nav divider login pos
-    body.logged-in #top-header .container .navbar-secondary .nav-wrapper .menu-secondary .navbar-nav li:not(:first-child):before {
-        right: 80px;
+    body.logged-in #top-header .container .navbar-top-header-right .nav-wrapper .navbar-nav li:not(:first-child):before {
+        right: 68px;
     }
 }
 

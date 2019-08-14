@@ -1,4 +1,19 @@
 // ----- Default ----- //
+#navbar-collapse-1.show #main-menu {
+    padding-top: $height__xs-main-header;
+}
+@include media-breakpoint-down(md) {
+    #navbar-collapse-1.show #main-menu {
+        padding-top: $height__sm-main-header;
+    }
+}
+@include media-breakpoint-down(md) {
+    #navbar-collapse-1.show #main-menu {
+        padding-top: $height__md-main-header;
+    }
+}
+
+
 // --- Layout --- //
 header { // #masthead .site-header
     #main-header {
@@ -30,14 +45,6 @@ header { // #masthead .site-header
                             height: 100vh;
                             border-left-style: solid;
                             border-left-width: 1px;
-                            form { // #searchform
-                                .input-group-btn {
-                                    .btn {
-                                        // button size
-                                        padding: .4375rem .875rem;
-                                    }
-                                }
-                            }
                             >ul { // #menu-primary-menu, .navbar-nav
                                 >li { // .nav-item
                                     >a { // .nav-link

@@ -22,7 +22,23 @@
 --------------------------------------------------------------*/
 @import "top-header";
 
-// ----- Mobile ----- //
+/* ----- Theme Custom ----- */
+// --- Responsive fullwidth border-top bar design --- //
+#top-header {
+  border-top: none;
+}
+#main-header {
+  border-top: 5px solid;
+}
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+  #top-header {
+      border-top: 5px solid;
+  }
+  #main-header {
+      border-top: none;
+  }
+}
+
 
 @include media-breakpoint-up($breakpoint__mobile-nav) {
   .site-header { // #masthead

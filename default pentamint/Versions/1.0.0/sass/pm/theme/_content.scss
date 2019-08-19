@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+## Sidebar Layout
+--------------------------------------------------------------*/
+// Sidebar Right
+@import "../layout/content-sidebar";
+// Sidebar Left
+// @import "../layout/sidebar-content";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "../../site/primary/posts-and-pages";
+@import "../content/default"; // pm resets
+@import "content/front-page"; // homepage
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "../../site/primary/comments";
+
+/* ----- Theme Style ----- */
+// ----- Global ----- //
+
+
+// Remove padding-top for home banner
+.home {
+	.site-content { // #content
+		.content-area { // #primary
+			// padding-top: 0; // padding-top remove for home
+		}
+	}
+}
+
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+	// all posts & pages spacing bottom
+	.site-content {
+		padding-bottom: 4em;
+	}
+}
+// ----- End Global ----- //

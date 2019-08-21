@@ -21,18 +21,10 @@
 /* ----- Theme Style ----- */
 // ----- Global ----- //
 
-// Remove padding-top for home banner
-.home {
-	.site-content { // #content
-		.content-area { // #primary
-			// padding-top: 0; // padding-top remove for home
-		}
-	}
-}
-
 @include media-breakpoint-up($breakpoint__mobile-nav) {
 	// all posts & pages spacing bottom
 	.site-content {
+		margin-left: $size__site-sidebar-header;
 		padding-bottom: 4em;
 	}
 }

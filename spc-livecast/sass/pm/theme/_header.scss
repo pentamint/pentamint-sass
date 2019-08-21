@@ -1,45 +1,21 @@
 @import "../header/default";
 
-/*--------------------------------------------------------------
-## Header background: block / transparent
---------------------------------------------------------------*/
-// @import "../header/transparent";
-
-/*--------------------------------------------------------------
-## Logo position: logo-center / logo-right
---------------------------------------------------------------*/
-@import "../header/logo-left";
-// @import "../header/logo-center";
-// @import "../header/logo-right";
-
-/*--------------------------------------------------------------
-## Header on scroll: block / fixed
---------------------------------------------------------------*/
-@import "../header/fixed";
-
-/*--------------------------------------------------------------
-## Top header
---------------------------------------------------------------*/
-@import "top-header";
-
 /* ----- Theme Custom ----- */
-// --- Responsive fullwidth border-top bar design --- //
-#top-header {
-  border-top: none;
-}
-#main-header {
-  border-top: 5px solid;
+#masthead {
+  background: linear-gradient(135deg,#8f75da 0,#727cf5 60%);
+  padding: 15px 30px;
+  .slimScrollDiv {
+    width: 100%;
+    .slimscroll-menu {
+      .site-branding {
+        margin: 1rem 0;
+      }
+    }
+  }
 }
 @include media-breakpoint-up($breakpoint__mobile-nav) {
-  #top-header {
-      border-top: 5px solid;
-  }
-  #main-header {
-      border-top: none;
-  }
+
 }
 @include media-breakpoint-down(md) {
-  #navbar-collapse-1.show #main-menu {
-    margin-top: 5px; // add top border spacing to mobile menu
-  }
+
 }
